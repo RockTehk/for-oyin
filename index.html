@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#120d1c" />
+  <title>For Oyin ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <span class="orb orb-a"></span><span class="orb orb-b"></span><span class="orb orb-c"></span>
+    <div class="stars"></div>
+  </div>
+
+  <main id="app">
+    <section class="screen active" id="landing">
+      <div class="eyebrow">A little something, just for you</div>
+      <div class="heart-mark">♡</div>
+      <h1>Hi, Oyin.</h1>
+      <p class="subtitle">I made something for you.</p>
+      <button class="primary" data-next="message">Open this <span>→</span></button>
+      <button class="sound-toggle" id="soundToggle" aria-label="Toggle soft background sound">♫ <span>sound</span></button>
+    </section>
+
+    <section class="screen" id="message">
+      <div class="card message-card">
+        <div class="small-heart">♡</div>
+        <p class="greeting">Hi Oyin,</p>
+        <div class="message-copy">
+          <p>You know, I've been thinking about something, and I think I should just say it.</p>
+          <p>Okay, I'm playing 😂. I know you're probably already looking serious, wondering what I have done now or what I'm about to drag you about.</p>
+          <p>But no drama. No hidden agenda.</p>
+          <p>I just wanted to tell you that <strong>I love you. So much.</strong></p>
+          <p>I genuinely appreciate the gift of having you in my life. I appreciate the little things, the big things, the conversations, the laughter, and even the moments when we don't quite get things right.</p>
+          <p>I don't want to ever get so used to having you around that I forget to appreciate what you mean to me.</p>
+          <p>And before you start thinking, “This boy is just doing one of his things again” 😂 — no. I'm actually being serious.</p>
+          <p>I spent quite some time putting this together because I wanted you to see something simple but intentional. Every little part of this page was made with you in mind.</p>
+          <p>So, in case I don't say it enough: <strong>thank you for being you, Oyin.</strong> And thank you for being part of my life.</p>
+          <p class="closing">I love you. ❤️</p>
+        </div>
+        <button class="primary" data-next="conversation">There's something else →</button>
+      </div>
+    </section>
+
+    <section class="screen" id="conversation">
+      <div class="card conversation-card">
+        <div class="eyebrow">One more thing</div>
+        <h2>Can we talk?</h2>
+        <p class="lead">There's something I'd really like us to talk about properly.</p>
+        <p>Whenever you're free. No prayer, no hard feelings, no tension — just a cool, honest and intentional conversation. Just us.</p>
+
+        <div class="choices">
+          <button class="choice" data-choice="Saturday">Saturday <span>♡</span></button>
+          <button class="choice" data-choice="Sunday">Sunday <span>♡</span></button>
+          <button class="choice" data-choice="Another day">Another day <span>→</span></button>
+          <button class="choice playful" data-choice="Any day is fine 😂">Any day is fine 😂 <span>♡</span></button>
+        </div>
+        <p class="tiny">Pick whichever works for you. No pressure.</p>
+      </div>
+    </section>
+
+    <section class="screen" id="confirmation">
+      <div class="confirmation-wrap">
+        <div class="success-heart">♥</div>
+        <div class="eyebrow">Message received</div>
+        <h2 id="confirmationTitle">It's a plan. ❤️</h2>
+        <p id="confirmationText">Thank you for choosing. I'll be looking forward to our conversation.</p>
+        <div class="selected-pill" id="selectedPill"></div>
+        <div class="tiny" id="sendStatus">Sending your response quietly…</div>
+        <button class="ghost" id="backHome">Read it again</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
