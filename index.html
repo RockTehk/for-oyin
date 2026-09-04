@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -17,66 +18,343 @@
   </div>
 
   <main id="app">
-    <section class="screen active" id="landing">
-      <div class="eyebrow">A little something, just for you</div>
-      <div class="heart-mark">♡</div>
-      <h1>Hi, Oyin.</h1>
-      <p class="subtitle">I made something for you.</p>
-      <button class="primary" data-next="message">Open this <span>→</span></button>
-      <button class="sound-toggle" id="soundToggle" aria-label="Toggle soft background sound">♫ <span>sound</span></button>
-    </section>
 
-    <section class="screen" id="message">
-      <div class="card message-card">
-        <div class="small-heart">♡</div>
-        <p class="greeting">Hi Oyin,</p>
-        <div class="message-copy">
-          <p>You know, I've been thinking about something, and I think I should just say it.</p>
-          <p>Okay, I'm playing 😂. I know you're probably already looking serious, wondering what I have done now or what I'm about to drag you about.</p>
-          <p>But no drama. No hidden agenda.</p>
-          <p>I just wanted to tell you that <strong>I love you. So much.</strong></p>
-          <p>I genuinely appreciate the gift of having you in my life. I appreciate the little things, the big things, the conversations, the laughter, and even the moments when we don't quite get things right.</p>
-          <p>I don't want to ever get so used to having you around that I forget to appreciate what you mean to me.</p>
-          <p>And before you start thinking, “This boy is just doing one of his things again” 😂 — no. I'm actually being serious.</p>
-          <p>I spent quite some time putting this together because I wanted you to see something simple but intentional. Every little part of this page was made with you in mind.</p>
-          <p>So, in case I don't say it enough: <strong>thank you for being you, Oyin.</strong> And thank you for being part of my life.</p>
-          <p class="closing">I love you. ❤️</p>
-        </div>
-        <button class="primary" data-next="conversation">There's something else →</button>
-      </div>
-    </section>
+```
+<!-- LANDING SCREEN -->
+<section class="screen active" id="landing">
+  <div class="eyebrow">A little something, just for you</div>
+  <div class="heart-mark">♡</div>
+  <h1>Hi, Oyin.</h1>
+  <p class="subtitle">I made something for you.</p>
+  <button class="primary" data-next="message">Open this <span>→</span></button>
+  <button class="sound-toggle" id="soundToggle" aria-label="Toggle soft background sound">♫ <span>sound</span></button>
+</section>
 
-    <section class="screen" id="conversation">
-      <div class="card conversation-card">
-        <div class="eyebrow">One more thing</div>
-        <h2>Can we talk?</h2>
-        <p class="lead">There's something I'd really like us to talk about properly.</p>
-        <p>Whenever you're free. No prayer, no hard feelings, no tension — just a cool, honest and intentional conversation. Just us.</p>
 
-        <div class="choices">
-          <button class="choice" data-choice="Saturday">Saturday <span>♡</span></button>
-          <button class="choice" data-choice="Sunday">Sunday <span>♡</span></button>
-          <button class="choice" data-choice="Another day">Another day <span>→</span></button>
-          <button class="choice playful" data-choice="Any day is fine 😂">Any day is fine 😂 <span>♡</span></button>
-        </div>
-        <p class="tiny">Pick whichever works for you. No pressure.</p>
-      </div>
-    </section>
+<!-- MESSAGE SCREEN -->
+<section class="screen" id="message">
+  <div class="card message-card">
+    <div class="small-heart">♡</div>
 
-    <section class="screen" id="confirmation">
-      <div class="confirmation-wrap">
-        <div class="success-heart">♥</div>
-        <div class="eyebrow">Message received</div>
-        <h2 id="confirmationTitle">It's a plan. ❤️</h2>
-        <p id="confirmationText">Thank you for choosing. I'll be looking forward to our conversation.</p>
-        <div class="selected-pill" id="selectedPill"></div>
-        <div class="tiny" id="sendStatus">Sending your response quietly…</div>
-        <button class="ghost" id="backHome">Read it again</button>
-      </div>
-    </section>
+    <p class="greeting">Hi Oyin,</p>
+
+    <div class="message-copy">
+
+      <p>
+        Okay… I know this probably looks like one of those moments where
+        you're wondering, <em>“What is this boy up to again?”</em> 😂
+      </p>
+
+      <p>
+        And honestly, I could have just sent you a normal message,
+        but where's the fun in that?
+      </p>
+
+      <p>
+        So let me just say it plainly.
+      </p>
+
+      <p>
+        <strong>I love you. So much. ❤️</strong>
+      </p>
+
+      <p>
+        And I don't mean that in the casual, everyday way we sometimes
+        say those words. I mean I genuinely appreciate having you in my life.
+      </p>
+
+      <p>
+        I appreciate your presence.<br>
+        The little things you do.<br>
+        The conversations we have.<br>
+        The laughter.<br>
+        The random moments.<br>
+        Even the moments when we don't quite understand each other
+        or get everything right.
+      </p>
+
+      <p>
+        Because somehow, through all of it, you're still someone
+        I'm grateful to have.
+      </p>
+
+      <p>
+        I never want to get so comfortable with having you around
+        that I forget just how special you are to me.
+      </p>
+
+      <p>
+        You mean a lot to me, babe. More than I probably say sometimes.
+      </p>
+
+      <p>
+        And before you start thinking,
+        <em>“This boy is doing one of his things again.”</em> 😂
+      </p>
+
+      <p>
+        Nope.
+      </p>
+
+      <p>
+        This time, I'm actually being serious as always.
+      </p>
+
+      <p>
+        I spent some time putting this little page together because
+        I wanted to do something different. Something simple, but intentional.
+        Something that would make you smile and remind you that there's someone
+        here who thinks about you, appreciates you, and genuinely cares about you.
+      </p>
+
+      <p>
+        Every little part of this was made with <strong>you</strong> in mind.
+      </p>
+
+      <p>
+        So, in case I don't say it enough:
+        <strong>Thank you for being you, Oyin. ❤️</strong>
+      </p>
+
+      <p>
+        Thank you for being part of my life.
+      </p>
+
+      <p>
+        And thank you for being someone worth putting a whole little
+        website together for. 😂❤️
+      </p>
+
+      <p>
+        I don't always have the perfect words to explain everything I feel,
+        but I hope this little effort says something for me.
+      </p>
+
+      <p>
+        <strong>You matter to me. A lot. ❤️</strong>
+      </p>
+
+      <p>
+        And now… before I start writing a whole book and you start saying,
+        <em>“Okayyy, we get it.”</em> 😂
+      </p>
+
+      <p>
+        I have one small question for you. 👀
+      </p>
+
+      <p class="closing">
+        I love you. ❤️
+      </p>
+
+    </div>
+
+    <button class="primary" data-next="conversation">
+      There's something else →
+    </button>
+  </div>
+</section>
+
+
+<!-- CONVERSATION SCREEN -->
+<section class="screen" id="conversation">
+  <div class="card conversation-card">
+
+    <div class="eyebrow">One more thing</div>
+
+    <h2>Can we talk? ❤️</h2>
+
+    <p class="lead">
+      There's something I'd really like us to talk about properly.
+    </p>
+
+    <p>
+      And before your mind starts running faster than Usain Bolt,
+      relax. 😭😂
+    </p>
+
+    <p>
+      Nothing happened.
+    </p>
+
+    <p>
+      Seriously.
+    </p>
+
+    <p>
+      No hidden agenda.<br>
+      No trouble.<br>
+      No hard feelings.<br>
+      No tension.<br>
+      And definitely no “you're in trouble” kind of conversation. 😂
+    </p>
+
+    <p>
+      I just want <strong>us to talk. ❤️</strong>
+    </p>
+
+    <p>
+      Not because something is wrong.
+      Not because I have something to complain about.
+      And definitely not because you need to come prepared with answers.
+    </p>
+
+    <p>
+      I just think sometimes, in the middle of everything going on around us,
+      we don't get enough moments to simply slow down and have a proper conversation.
+    </p>
+
+    <p>
+      So I thought…
+    </p>
+
+    <p>
+      <strong>Why not create one? ❤️</strong>
+    </p>
+
+    <p>
+      Just you and me.
+    </p>
+
+    <p>
+      A calm, cool, beautiful and relaxed conversation.
+    </p>
+
+    <p>
+      No pressure.<br>
+      No tension.<br>
+      No expectations.
+    </p>
+
+    <p>
+      Just two people who care about each other, taking some intentional time
+      to talk, listen, laugh, share thoughts, and simply enjoy each other's presence.
+    </p>
+
+    <p>
+      We can talk about serious things.
+    </p>
+
+    <p>
+      We can talk about silly things.
+    </p>
+
+    <p>
+      We can talk about things we've been meaning to say.
+    </p>
+
+    <p>
+      We can even talk about things that don't matter at all. 😂
+    </p>
+
+    <p>
+      We might start with one topic and somehow end up discussing five
+      completely unrelated things.
+    </p>
+
+    <p>
+      And knowing us… there's a very good chance we'll laugh at something
+      that wasn't even supposed to be funny. 😂
+    </p>
+
+    <p>
+      And honestly, I'm perfectly okay with that.
+    </p>
+
+    <p>
+      Because this isn't about having some perfectly planned conversation.
+    </p>
+
+    <p>
+      It's about <strong>us.</strong>
+    </p>
+
+    <p>
+      It's about creating a little space where we can just be ourselves.
+    </p>
+
+    <p>
+      No rush.<br>
+      No distractions.<br>
+      No pretending.
+    </p>
+
+    <p>
+      Just you and me, having one of those conversations that leaves
+      both of us smiling afterwards. ❤️
+    </p>
+
+    <p>
+      So, my beautiful Oyin…
+    </p>
+
+    <p>
+      <strong>When would you like us to have our little discussion? 👀❤️</strong>
+    </p>
+
+    <div class="choices">
+      <button class="choice" data-choice="Saturday">
+        Saturday <span>♡</span>
+      </button>
+
+      <button class="choice" data-choice="Sunday">
+        Sunday <span>♡</span>
+      </button>
+
+      <button class="choice" data-choice="Another day">
+        Another day <span>→</span>
+      </button>
+
+      <button class="choice playful" data-choice="Any day is fine 😂">
+        Any day is fine 😂 <span>♡</span>
+      </button>
+    </div>
+
+    <p class="tiny">
+      Pick whichever works for you. No pressure. ❤️
+    </p>
+
+  </div>
+</section>
+
+
+<!-- CONFIRMATION SCREEN -->
+<section class="screen" id="confirmation">
+  <div class="confirmation-wrap">
+
+    <div class="success-heart">♥</div>
+
+    <div class="eyebrow">Message received</div>
+
+    <h2 id="confirmationTitle">
+      I’m looking forward to it. ❤️
+    </h2>
+
+    <p id="confirmationText">
+      Thank you for choosing. I'll be looking forward to our conversation.
+      No pressure, no tension — just you and me, taking some time to talk,
+      laugh and enjoy the moment.
+    </p>
+
+    <div class="selected-pill" id="selectedPill"></div>
+
+    <div class="tiny" id="sendStatus">
+      Sending your response quietly…
+    </div>
+
+    <button class="ghost" id="backHome">
+      Read it again
+    </button>
+
+  </div>
+</section>
+```
+
   </main>
 
   <script src="config.js"></script>
+
   <script src="script.js"></script>
+
 </body>
 </html>
